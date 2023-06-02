@@ -34,7 +34,7 @@ const App = () => {
                 type="text"
                 value={newContact}
                 onChange={inputChange}
-                placeholder="Enter contact name"
+                placeholder="Ingresar nombre de contacto"
             />
             <button onClick={addContact}>Add Contact</button>
             <ul>
