@@ -29,7 +29,8 @@ const App = () => {
 
     return (
         <>
-            <h1>Lista de Contactos</h1>
+          <h1>Lista de Contactos</h1>
+          <div className="input">
             <input
                 type="text"
                 value={newContact}
@@ -37,6 +38,7 @@ const App = () => {
                 placeholder="Ingresar nombre de contacto"
             />
             <button onClick={addContact}>Añadir Contacto</button>
+          </div>
             <ul>
                 {contacts.map((contact, index) => (
                     <li key={index} style={{ color: contact.isConnected ? "green" : "red"}}>
