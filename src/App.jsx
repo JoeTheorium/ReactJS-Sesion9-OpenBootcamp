@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 const App = () => {
-    const [ contacts, setContacts ] = useState([]);
-    const [ newContact, setNewContact ] = useState('');
+    const [contacts, setContacts] = useState([]);
+    const [newContact, setNewContact] = useState('');
 
     const inputChange = (event) => {
         setNewContact(event.target.value);
@@ -29,19 +29,19 @@ const App = () => {
 
     return (
         <>
-          <h1>Lista de Contactos</h1>
-          <div className="input">
-            <input
-                type="text"
-                value={newContact}
-                onChange={inputChange}
-                placeholder="Ingresar nombre de contacto"
-            />
-            <button onClick={addContact}>Añadir Contacto</button>
-          </div>
+            <h1>Lista de Contactos</h1>
+            <div className="input">
+                <input
+                    type="text"
+                    value={newContact}
+                    onChange={inputChange}
+                    placeholder="Ingresar nombre de contacto"
+                />
+                <button onClick={addContact}>Añadir Contacto</button>
+            </div>
             <ul>
                 {contacts.map((contact, index) => (
-                    <li key={index} style={{ color: contact.isConnected ? "green" : "red"}}>
+                    <li key={index} style={{ color: contact.isConnected ? "green" : "red" }}>
                         {contact.name} - {contact.isConnected ? 'Conectado' : 'Desconectado'}
                         <button onClick={() => toggleStatus(index)}>Cambiar Estado</button>
                         <button onClick={() => deleteContact(index)}>Borrar Contacto</button>
