@@ -29,14 +29,14 @@ const App = () => {
 
     return (
         <div>
-            <h1>Contact List</h1>
+            <h1>Lista de Contactos</h1>
             <input
                 type="text"
                 value={newContact}
                 onChange={inputChange}
                 placeholder="Ingresar nombre de contacto"
             />
-            <button onClick={addContact}>Add Contact</button>
+            <button onClick={addContact}>Añadir Contacto</button>
             <ul>
                 {contacts.map((contact, index) => (
                     <li key={index}>
