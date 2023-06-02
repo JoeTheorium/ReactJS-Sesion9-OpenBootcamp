@@ -40,9 +40,14 @@ body>div{
 }
 ul{
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 ul li{
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: .5em;
   align-items: center;
   font-size: 1.3em;
