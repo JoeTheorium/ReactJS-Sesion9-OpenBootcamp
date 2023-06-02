@@ -28,7 +28,7 @@ const App = () => {
     };
 
     return (
-        <div>
+        <>
             <h1>Lista de Contactos</h1>
             <input
                 type="text"
@@ -46,7 +46,7 @@ const App = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </>
     );
 };
 
