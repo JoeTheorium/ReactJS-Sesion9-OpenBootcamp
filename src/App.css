@@ -1,0 +1,71 @@
+body>div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+}
+.input{
+  display: flex;
+  gap: .5em;
+}
+.input input{
+  min-width: 15rem;
+  height: 2rem;
+  border-radius: 5px;
+  padding: .2rem;
+  font-weight: 500;
+}
+.input button{
+  font-weight: 700;
+
+  height: 2rem;
+  border-radius: 5px;
+  padding: .5rem;
+  border: currentColor solid 2px;
+  background: none;
+  color: #ddd;
+  cursor: pointer;
+  transition: 1s ease;
+}
+.input button:hover{
+  background: linear-gradient(45deg,purple,tomato);
+  background-size: 200%;
+  background-position: bottom left;
+  border: inset 2px;
+}
+.input button:active{
+  background-position: top right;
+  border: outset 2px;
+}
+ul{
+  list-style: none;
+}
+ul li{
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  font-size: 1.3em;
+}
+li button{
+  padding: .3em;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #ddd;
+  cursor: pointer;
+  border: 1.5px currentColor solid;
+  transition: .5s ease;
+  font-size: 1rem;
+
+}
+li button:hover{
+  background-color: #ddd;
+  color: #111;
+}
+li button:nth-child(2):hover{
+  background: red;
+  color: #fff;
+}
+li button:active{
+  scale: .9;
+}
