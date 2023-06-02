@@ -40,7 +40,7 @@ const App = () => {
             <ul>
                 {contacts.map((contact, index) => (
                     <li key={index}>
-                        {contact.name} - {contact.isConnected ? 'Connected' : 'Disconnected'}
+                        {contact.name} - {contact.isConnected ? 'Conectado' : 'Desconectado'}
                         <button onClick={() => toggleStatus(index)}>Toggle Status</button>
                         <button onClick={() => deleteContact(index)}>Delete</button>
                     </li>
